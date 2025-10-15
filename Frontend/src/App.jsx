@@ -52,7 +52,7 @@ function App() {
     setError(null);
     setLiveUrl(null);
     try {
-      const response = await fetch('http://localhost:3001/generate-code', {
+      const response = await fetch('https://code-gen-backend.onrender.com/generate-code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:3001/publish', {
+      const response = await fetch('https://code-gen-backend.onrender.com/publish', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
